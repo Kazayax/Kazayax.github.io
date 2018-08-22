@@ -1,0 +1,385 @@
+h1, h2, h4, h5, p, a {
+  font-family:"Montserrat", sans-serif;
+  margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 50px;
+	color: white;
+	font-weight: 300;
+}
+
+h2 {
+	font-size: 40px;
+	font-weight: 200;
+
+}
+
+body {
+	margin: 0;
+}
+
+ ul{
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+
+}
+
+header nav li{
+  display: inline-block;
+  margin: 0 8px;
+}
+
+header nav li:hover{
+	border-bottom:2px solid green;
+	padding-bottom: 3px;
+}
+
+header nav .noBorder:hover{
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+header nav li a {
+	color: white;
+
+}
+
+header {
+	background-color: grey;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+}
+
+header .logo{
+	width: 180px;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+.btnBlue{
+	background-color: #00a1de;
+	padding: 10px 20px;
+	border-radius: 3px;
+	border: none;
+	color: white;
+	height: 50px;
+}
+
+.btnBlue:hover{
+	background-color: #12beff;
+}
+
+#firstDiv{
+	padding-top: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #314659;
+	padding-left: 0px;
+}
+
+.left{
+	padding-left: 50px; 
+}
+
+.left .btnBlue{
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 20px; 
+}
+
+.left h1 {
+	padding-bottom: 40px;
+}
+
+.playbtn {
+	width: 30px;
+	vertical-align: middle;
+}
+
+#firstDiv ul {
+	display: flex;
+}
+
+.right .imgDiv1 {
+	width: 100%;
+	min-width: 500px;
+}
+
+#secondDiv .txt1{
+    padding: 50px;
+
+}
+
+#secondDiv h2{
+	font-weight: 200;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+#secondDiv p{
+}
+
+#secondDiv .txt1 p{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.txt1{
+	text-align: center;
+}
+
+.txt2{
+	display: flex;
+    flex-direction: column;
+}
+
+.txt2 h4{
+	font-size: 20px;
+	margin-bottom: 15px;
+
+}
+
+.txt2 p{
+	width: 80%;
+	margin: 0 0 35px 18px;
+	line-height: 26px;
+}
+
+.reseaux {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 0;
+
+}
+
+.reseaux p {
+	margin-right: 35px;
+}
+
+.reseaux img {
+	margin-right: 10px; 
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #eee;
+}
+
+#expert {
+	background-color: #314659;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+
+
+.txtExp h2{
+	color: white;
+	margin: 40px 0 20px 20px;
+	width: 50%;
+}
+
+.txtExp p{
+	color: white;
+	margin: 0 0 20px 20px;
+	width: 60%;
+}
+
+.txtExp a{
+	padding: 20px;
+}
+
+.imgExp {	
+	width: 100%
+	margin-bottom: 20px;
+	padding-right: 100px;
+}
+
+#pourcent {
+	display: flex;
+	justify-content: space-between;	
+}
+
+.imgPct {
+	width: 45%;
+}
+
+.txtPct {
+	display: flex;
+	flex-direction: column;
+	padding-top: 100px;	
+}
+
+.txtPct p {
+	padding-top: 30px;
+
+}
+
+.txtPct a {
+	padding-top: 30px;
+}
+
+#invest {
+	display: flex;
+	justify-content: space-between;
+	background-color: #314659;
+}
+
+.txtInv{
+	color: white;
+}
+
+.txtInv h2{
+	padding: 50px 0 0 30px;
+	width: 50%;
+}
+
+.txtInv p{
+	padding: 30px 0 0px 30px;
+	width: 60%
+}
+
+.txtInv button{
+	margin: 30px 0 0 30px;
+}
+
+#actu{
+	background-color: #eee;
+
+}
+
+.txtActu{
+	display: flex;
+	justify-content: space-around;
+	padding: 50px;
+}
+
+.ttlActu{
+	text-align: center;
+	padding-top: 100px;
+}
+
+#actu a button{
+    margin: 0 auto;
+    display: block;
+}
+
+.txtA{
+	width: 300px;
+	background-color: white;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 100px;
+}
+
+#com {
+	text-align: center;
+	background-color: #eee;
+	padding: 100px 0;
+
+}
+
+#com .imgCommu{
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#com .imgCom img {
+	width: 150px;
+}
+
+#com .imgCom{
+	background-color: white;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer {
+	background-color: black;	
+}
+
+footer ul{
+	color: white;
+}
+
+footer p{
+	color: white;
+}
+
+.footList{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	justify-content: space-around;
+}
+
+.footList ul li{
+	padding-top: 40px;
+}
+
+.reseauxSoc {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.reseauxSoc img{
+	margin-top: 20px;
+	padding-right: 28px;
+}
+
+.reseauxSoc .imgRS{
+}
+
+.reseauxSoc .imgRS img{
+	padding-right: 30px;
+}
+
+
+.newsletter{
+	display: flex;
+	flex-direction: column;
+}
+
+.newsletter p {
+	padding: 10px 0;
+}
+
+.newsletter a {
+	padding: 10px 0;
+}
+
+.end {
+	background-color: grey;
+	padding: 20px;
+}
+
+.end p{
+	color: black;
+	text-align: center;
+}
