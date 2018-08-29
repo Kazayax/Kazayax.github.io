@@ -1,385 +1,467 @@
-h1, h2, h4, h5, p, a {
-  font-family:"Montserrat", sans-serif;
-  margin: 0;
+body {
+	overflow-x: hidden;
+	font-family: 'Montserrat', sans serif;
+
 }
 
 a{
 	text-decoration: none;
-}
-
-h1 {
-	font-size: 50px;
-	color: white;
-	font-weight: 300;
-}
-
-h2 {
-	font-size: 40px;
-	font-weight: 200;
-
-}
-
-body {
-	margin: 0;
-}
-
- ul{
-  padding: 0px;
-  margin: 0px;
-  list-style-type: none;
-
-}
-
-header nav li{
-  display: inline-block;
-  margin: 0 8px;
-}
-
-header nav li:hover{
-	border-bottom:2px solid green;
-	padding-bottom: 3px;
-}
-
-header nav .noBorder:hover{
-	border-bottom: none;
-	padding-bottom: 0;
-}
-
-header nav li a {
-	color: white;
-
+	color: inherit; 
 }
 
 header {
-	background-color: grey;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 15px;
+	z-index: 1; /* précise l'empilement de l'élément de la page */
 }
 
-header .logo{
-	width: 180px;
-}
-
-nav li a {
-  text-decoration: none;
-}
-
-.btnBlue{
-	background-color: #00a1de;
-	padding: 10px 20px;
-	border-radius: 3px;
-	border: none;
-	color: white;
-	height: 50px;
-}
-
-.btnBlue:hover{
-	background-color: #12beff;
-}
-
-#firstDiv{
-	padding-top: 100px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #314659;
-	padding-left: 0px;
-}
-
-.left{
-	padding-left: 50px; 
-}
-
-.left .btnBlue{
-	display: inline-block;
-	margin-right: 20px;
-	font-size: 20px; 
-}
-
-.left h1 {
-	padding-bottom: 40px;
-}
-
-.playbtn {
+header .burger{
 	width: 30px;
-	vertical-align: middle;
+	margin: 34px 0 0 20px;
+	display: none;
 }
 
-#firstDiv ul {
-	display: flex;
-}
+header nav .cross{
+		display: none;
+	}
 
-.right .imgDiv1 {
-	width: 100%;
-	min-width: 500px;
-}
-
-#secondDiv .txt1{
-    padding: 50px;
-
-}
-
-#secondDiv h2{
-	font-weight: 200;
-    font-size: 40px;
-    margin-bottom: 25px;
-}
-
-#secondDiv p{
-}
-
-#secondDiv .txt1 p{
-    width: 70%;
-    margin: 0 auto;
-}
-
-.txt1{
-	text-align: center;
-}
-
-.txt2{
-	display: flex;
-    flex-direction: column;
-}
-
-.txt2 h4{
-	font-size: 20px;
-	margin-bottom: 15px;
-
-}
-
-.txt2 p{
-	width: 80%;
-	margin: 0 0 35px 18px;
-	line-height: 26px;
-}
-
-.reseaux {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 40px 0;
-
-}
-
-.reseaux p {
-	margin-right: 35px;
-}
-
-.reseaux img {
-	margin-right: 10px; 
-}
-
-.content {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #eee;
-}
-
-#expert {
-	background-color: #314659;
-	display: flex;
-	justify-content: space-between;
-	padding-top: 20px;
-}
-
-
-.txtExp h2{
-	color: white;
-	margin: 40px 0 20px 20px;
-	width: 50%;
-}
-
-.txtExp p{
-	color: white;
-	margin: 0 0 20px 20px;
-	width: 60%;
-}
-
-.txtExp a{
-	padding: 20px;
-}
-
-.imgExp {	
-	width: 100%
-	margin-bottom: 20px;
-	padding-right: 100px;
-}
-
-#pourcent {
-	display: flex;
-	justify-content: space-between;	
-}
-
-.imgPct {
-	width: 45%;
-}
-
-.txtPct {
-	display: flex;
-	flex-direction: column;
-	padding-top: 100px;	
-}
-
-.txtPct p {
-	padding-top: 30px;
-
-}
-
-.txtPct a {
-	padding-top: 30px;
-}
-
-#invest {
-	display: flex;
-	justify-content: space-between;
-	background-color: #314659;
-}
-
-.txtInv{
-	color: white;
-}
-
-.txtInv h2{
-	padding: 50px 0 0 30px;
-	width: 50%;
-}
-
-.txtInv p{
-	padding: 30px 0 0px 30px;
-	width: 60%
-}
-
-.txtInv button{
-	margin: 30px 0 0 30px;
-}
-
-#actu{
-	background-color: #eee;
-
-}
-
-.txtActu{
-	display: flex;
-	justify-content: space-around;
-	padding: 50px;
-}
-
-.ttlActu{
-	text-align: center;
-	padding-top: 100px;
-}
-
-#actu a button{
-    margin: 0 auto;
-    display: block;
-}
-
-.txtA{
-	width: 300px;
-	background-color: white;
-	padding: 20px;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-	height: 100px;
-}
-
-#com {
-	text-align: center;
-	background-color: #eee;
-	padding: 100px 0;
-
-}
-
-#com .imgCommu{
-	display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 50px;
-}
-
-#com .imgCom img {
+header .logo {
 	width: 150px;
+	position: absolute; /* détermine la façon dont est positionné l'élément */
+	top: 10%; /* top, right; bottom; left determinent l'emplacement final */
+	left: 15%;
 }
 
-#com .imgCom{
-	background-color: white;
-	width: 200px;
-	height: 200px;
+header nav .cross{
+	width: 30px;
+	position: absolute;
+    top: 34px;
+    left: 30px;
+}
+
+header nav ul {
+	list-style-type: none;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: center; /* aligne le texte horizontalement */
+	padding: 50px 30px;
+	align-items: center; /* aligne le texte verticalement */
 }
 
-footer {
-	background-color: black;	
+header nav li:hover{ /* action qd on passe la souris sur un élément */
+	color: gold;
+	transition: 0.3s;
 }
 
-footer ul{
+header nav li{
+	color: #000000;
+	transition: 0.3s;
+	margin: 0 20px;
+	font-family: 'Montserrat', sans serif;
+	text-transform: uppercase;
+
+}
+
+
+.firstDiv {
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/lambo-model-1.jpg"); /* mettre l'image en fond */
+	background-repeat: no-repeat; /* ne pas répéter l'image plusieurs fois sur l'écran */
+	background-size: cover; /* l'image couvre tout l'écran */
+	background-position: center center; /* centrer l'image sur l'axe x et y */
+	position: relative;
+}
+
+.firstDiv h1 {
+	font-family: 'Montserrat', sans serif;
+	font-size: 60px;
+	font-weight: bold;
+	color: #000;
+	text-align: right;
+	position: absolute;
+    bottom: 88px;
+    right: 80px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.5px; /* mettre une bordure au texte */
+	-webkit-text-stroke-color: #3CBBE3; /* la colorer */
+
+}
+
+.fleche{
+	position: absolute;
+	bottom: 80px;
+	right: 50%;
+    transform: translateX(50%); /* centrer l'élément sur la page */
+
+}
+
+.trait {
+	width: 60px;
+	height: 3px;
+	background-color: gold;
+	display: inline-block;
+	margin: -7px;
+}
+
+.trait:first-child{
+	transform: rotate(33deg);
+}
+
+.trait:last-child{
+	transform: rotate(-33deg);
+}
+
+.slider {
+	width: 100%;
+	padding: 50px 15px;
+}
+
+
+.slider img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.slider p{
+	padding: 10px 0;
+	font-weight: 400;
+}
+
+
+.slide{
+	margin: 0 15px; 
+}
+
+.slide .infos{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.slide span{
+	font-size: 10px;
+}
+
+.slide .infos .date{
+	font-weight: bold;
+}
+
+
+.slide .article{
+	color: red;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.slide h3{
+	width: 90%;
+	font-weight: bold;
+}
+
+/* class spécifique à slick (site de slider) */
+
+.slider .slick-arrow {
+	display: none!important; /* "!important" (ne pas trop utiliser!!) sert à faire passer la 
+	propriété avant toutes les autres */
+}
+
+.slick-slide{
+	height: auto;
+}
+
+/* class spécifique à slick (site de slider) */
+
+.spider{
+	padding: 50px;
+	position: relative;
+	display: flex;
+    align-items: center;
+
+}
+
+.spider .txtSpider{
+    padding-right: 50px;
+}
+
+.spider .txtSpider h2{
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 10px;
+
+}
+
+.spider .txtSpider p{
+	text-align: justify;
+	line-height: 2;
+}
+
+.spider .txtSpider a{
+	text-align: center;
+	line-height: 2.5;
+	display: flex;
+    justify-content: center;
+    color: black;
+    text-decoration: underline;
+}
+
+.spider .arrow{
+	position: absolute;
+    bottom: 50%;
+    z-index: 1;
+    transform: translateY(50%);
+}
+
+.spider .arrow img{
+	width: 50px;
+}
+
+.spider .arrowLeft{
+    left: 33%;
+}
+
+.spider .arrowRight{
+    right: 4.8%;
+}
+
+.spider .slider2{
+	width: 70%; 
+}
+
+.spider .slide img{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.contact h2{
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 50px;
+	background-color: grey;
 	color: white;
+}
+
+form {
+	/* Uniquement centrer le formulaire sur la page */
+	margin: 0 auto;
+	width: 400px;
+	/* Encadré pour voir les limites du formulaire */
+	padding: 1em;
+	border: 3px solid #CCC;
+	border-radius: 1em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+
+}
+
+form div + div {
+	margin-top: 1em;
+}
+
+label {
+	/* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+	display: inline-block;
+	width: 90px;
+	text-align: right;
+}
+
+input, textarea {
+	/* Pour s'assurer que tous les champs texte ont la même police.
+	Par défaut, les textarea ont une police monospace */
+	font: 1em Montserrat;
+
+	/* Pour que tous les champs texte aient la même dimension */
+	width: 70%;
+	box-sizing: border-box;
+
+	/* Pour harmoniser le look & feel des bordures des champs texte */
+	border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+	/* Pour souligner légèrement les éléments actifs */
+	border-color: #000;
+}
+
+textarea {
+	/* Pour aligner les champs texte multi‑ligne avec leur étiquette */
+	vertical-align: top;
+
+	/* Pour donner assez de place pour écrire du texte */
+	height: 5em;
+}
+
+.button {
+	/* Pour placer le bouton à la même position que les champs texte */
+	padding-left: 87px; /* même taille que les étiquettes */
+}
+
+button {
+	/* Cette marge supplémentaire représente grosso modo le même espace que celui
+	entre les étiquettes et les champs texte */
+	margin-left: .5em;
+	font-family: 'Montserrat';
+	font-size: 1em;
+
 }
 
 footer p{
-	color: white;
-}
-
-.footList{
-	display: flex;
-	align-items: center;
-	padding: 20px;
-	justify-content: space-around;
-}
-
-.footList ul li{
-	padding-top: 40px;
-}
-
-.reseauxSoc {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.reseauxSoc img{
-	margin-top: 20px;
-	padding-right: 28px;
-}
-
-.reseauxSoc .imgRS{
-}
-
-.reseauxSoc .imgRS img{
-	padding-right: 30px;
+	float: right;
 }
 
 
-.newsletter{
-	display: flex;
-	flex-direction: column;
+				/* RESPONSIVE */
+
+@media screen and (max-width: 1100px) {
+	
+	header .logo{
+		left: 0;
+	}
+
+	.spider{
+		padding: 0 30px;
+		flex-direction: column;
+	}
+
+	.spider .txtSpider{
+		padding-right: 0;
+	}
+
+	.spider .arrow{
+		display: none!important;
+	}
+
+	.spider .slider2 {
+    width: 100%;
+    margin: 0 auto;
+	}
+
+	.spider .arrow img {
+    width: 30px;
+	}
+
+	.spider .arrow{
+	bottom: 58px;
+	}
+
+	.spider .arrowLeft {
+    left: 49px;
+	}
+
+	.spider .arrowRight{
+		right: 49px;
+	}
 }
 
-.newsletter p {
-	padding: 10px 0;
-}
+@media screen and (max-width: 780px) {
+	
+	header nav{
+		display: none;
+		background: #b0c4de;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
 
-.newsletter a {
-	padding: 10px 0;
-}
+	header nav.active{
+		display: inline-block;
+	}
 
-.end {
-	background-color: grey;
-	padding: 20px;
-}
+	header nav ul{
+		flex-direction: column;
+	}
 
-.end p{
-	color: black;
-	text-align: center;
-}
+	header nav ul li {
+		margin: 30px auto;
+	}
+
+	header .burger{
+		display: inline-block;
+	}
+
+	header nav .cross{
+		display: inline-block;
+	}
+
+	header .logo{
+		width: 115px;
+		top: 25px;
+		left: 115px;
+		transform: translateX(-50%);
+    	left: 50%;
+	}
+
+	.firstDiv h1{
+		font-size: 30px;
+		bottom: auto;
+   		top: 110px;
+    	text-align: center;
+    	transform: translateX(50%);
+    	right: 50%
+	}
+
+	.firstDiv .fleche{
+		bottom: 70px;
+	}
+
+	.firstDiv .trait{
+		width: 40px;
+		height: 2px;
+		margin: -6px;
+	}
+
+	.slider .slide h3{
+		font-size: 10px;
+	}
+
+	.spider .txtSpider h2,
+	.spider .txtSpider p {
+		font-size: 12px;
+	}
+
+	.spider .txtSpider a {
+		font-size: 13px;
+		padding-bottom: 15px;
+	}
+	
+		.contact h2{
+		font-size: 27px;
+	}
+
+	form{
+		width: 222px;
+	}
+
+	form label{
+		display: block;
+		text-align: left;
+		font-size: 12px;
+	}
+
+	form .txtInfos label{
+		font-size: 12px;
+	}
+
+	input, textarea{
+		font-size: 12px;
+		width: 100%;
+	}
+
+	.button{
+		padding-left: 0;
+
+	}
+
+	.button button{
+		font-size: 12px;
+		margin: 0 auto;
+    	display: block;
+	}
+
